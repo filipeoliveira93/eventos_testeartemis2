@@ -1,20 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Evento" src="./assets/eventos.png">
+  <CadastroComp></CadastroComp>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CadastroComp from './components/Cadastro.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CadastroComp
+    
   }
 }
 </script>
 
 <style>
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +24,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+img{
+  width: 5rem;
+  height: auto;
 }
 </style>
